@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bike.html">
+
+
+
+
+    <style>
+        .jhewbdjhweb {
+
+            width: 80%;
+
+            text-align: center;
+            display: inline-block;
+            margin-top: 12px;
+            vertical-align: top;
+            height: 500px;
+        }
+
+        .open {
+
+            margin-bottom: 5px;
+        }
+
+        .jhwbfewjhfjwebf {
+
+
+            display: inline-block;
+            margin-top: 12px;
+            vertical-align: top;
+
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <dir class="logo">
+                <img
+                    src="https://st3.depositphotos.com/12547236/18281/v/450/depositphotos_182817480-stock-illustration-vector-illustration-of-classic-motorcycle.jpg">
+            </dir>
+
+            <ul>
+
+                <li><a href="bike.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="TouringMotorBike.html">Touring Motorbikes</a></li>
+                <li class="active"> <a href="#">Cruise MB</a></li>
+                <li><a href="sports.html">Sports MB</a></li>
+                <li><a href="standard.html">Standard MB</a></li>
+                <li><a href="vintage.html">Vintage MB</a></li>
+                <li><a href="#">More MB</a>
+                    <div class="sub-menu">
+                        <ul>
+
+                            <li><a href="dirt.html">Dirt</a></li>
+                            <li><a href="police.html">Police</a></li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+
+            <div class="jhewbdjhweb">
+
+                <div class="jhwbfewjhfjwebf">
+                    <img src="images/markus-spiske-Guq1vaoBZtk-unsplash.jpg" id="slider"
+                        style="height: 650px; width: 1370px; text-align: center;">
+
+
+                </div>
+
+            </div>
+            <div class="open">
+                <button onclick="left()"> &lt; </button>
+                <button onclick="right()"> &gt; </button>
+            </div>
+            <script>
+
+                images = ['markus-spiske-Guq1vaoBZtk-unsplash.jpg', 'kumpan-electric-nNj65l7MdBY-unsplash.jpg', 'amrut-roul-XXQHNzrxbDE-unsplash.jpg'];
+
+                i = 0;
+                function left() {
+                    i = i - 1;
+                    if (i < 0) {
+                        i = 2;
+                    }
+                    document.getElementById('slider').src = "images/" + images[i];
+
+
+                }
+                function right() {
+                    i = i + 1;
+                    if (i > 2) {
+                        i = 0;
+                    }
+                    document.getElementById('slider').src = "images/" + images[i];
+
+                }
+                setInterval(right, 2000)
+
+
+
+            </script>
+</body>
+
+</html>

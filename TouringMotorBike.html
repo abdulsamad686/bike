@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bike.html">
+
+
+
+
+    <style>
+        .jhewbdjhweb {
+
+            width: 80%;
+
+            text-align: center;
+            display: inline-block;
+            margin-top: 16px;
+            vertical-align: top;
+            height: 500px;
+        }
+
+        .open {
+
+            display: space-between;
+            justify-content: space-between;
+        }
+
+        .jhwbfewjhfjwebf {
+
+
+            display: inline-block;
+            margin-top: 16px;
+            vertical-align: top;
+
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <dir class="logo">
+                <img
+                    src="https://st3.depositphotos.com/12547236/18281/v/450/depositphotos_182817480-stock-illustration-vector-illustration-of-classic-motorcycle.jpg">
+            </dir>
+
+            <ul>
+
+                <li class=""><a href="bike.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="">Touring Motorbikes</a></li>
+                <li><a href="cruise.html">Cruise MB</a></li>
+                <li><a href="sports.html">Sports MB</a></li>
+                <li><a href="standard.html">Standard MB</a></li>
+                <li><a href="vintage.html">Vintage MB</a></li>
+                <li><a href="#">More MB</a>
+                    <div class="sub-menu">
+                        <ul>
+
+                            <li><a href="dirt.html">Dirt</a></li>
+                            <li><a href="police.html">Police</a></li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+
+            <div style="height: 80vh; width: 5%;margin-top: 130px;" class="jhewbdjhweb">
+
+                <div style="height:70%; width: 50px;" class="jhwbfewjhfjwebf">
+                    <img src="images/ambitious-studio-rick-barrett-okGhXLfCv6g-unsplash.jpg" id="slider"
+                        style="height: 650px; width: 1370px; text-align: center;">
+
+
+                </div>
+
+            </div>
+            <div class="open">
+                <button onclick="left()"> &lt; </button>
+                <button onclick="right()"> &gt; </button>
+            </div>
+            <script>
+
+                images = ['ambitious-studio-rick-barrett-okGhXLfCv6g-unsplash.jpg', 'lucas-favre-DvGWkKGLcqA-unsplash.jpg', 'harley-davidson-LUWVMSyNsR4-unsplash.jpg'];
+
+                i = 0;
+                function left() {
+                    i = i - 1;
+                    if (i < 0) {
+                        i = 2;
+                    }
+                    document.getElementById('slider').src = "images/" + images[i];
+                    document.getElementById('opener').src = "images/" + images[i];
+
+                }
+                function right() {
+                    i = i + 1;
+                    if (i > 2) {
+                        i = 0;
+                    }
+                    document.getElementById('slider').src = "images/" + images[i];
+
+                }
+                setInterval(right, 3000)
+
+
+
+            </script>
+</body>
+
+</html>
